@@ -23,22 +23,26 @@
 
 2. `server` is api endpoint
     * add new endpoint in `server/api`, route path will automatically add by three ways.
-      
+
         a. By Filename: `news.es6` will be `/news`
-      
+
         b. By Export path:
-      
+
             const path = "/news/id"
             export default {path}
         c. By Custom Route:
-      
+
             {
                 method: "GET",
                 path: "/news/my/path",
                 handle: function () {}
             }
-     
+
 # TODO
 
 1. Basic Authentication
 2. Test
+
+# LICENSE
+
+[MIT](LICENSE.md)
