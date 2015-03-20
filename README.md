@@ -2,12 +2,13 @@
 
 # Feature
 
-1. API server endpoint
-2. Flux [Tradition]
-3. React-router
-4. API server auto restart [for development]
-5. HMR support [for development]
-6. Basic Authentication (TODO)
+1. Support ES6 syntax
+2. API server endpoint
+3. Flux [Tradition]
+4. React-router
+5. API server auto restart [for development]
+6. HMR support [for development]
+7. Basic Authentication (TODO)
 
 # Usage
 
@@ -18,7 +19,7 @@
     * Use nodemon to progress files under `server`, `api`.
 
     * Use webpack-dev-server + http-proxy to progress HMR (Hot Module Replacement).
-    
+
 # Directory Structure
 
 1. `app` is a react app
