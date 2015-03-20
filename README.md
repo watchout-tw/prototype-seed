@@ -11,10 +11,14 @@
 
 # Usage
 
-1. fork this seed
+1. Fork this seed.
 2. `$ npm install`
 3. `$ npm run start-dev`
 
+    * Use nodemon to progress files under `server`, `api`.
+
+    * Use webpack-dev-server + http-proxy to progress HMR (Hot Module Replacement).
+    
 # Directory Structure
 
 1. `app` is a react app
