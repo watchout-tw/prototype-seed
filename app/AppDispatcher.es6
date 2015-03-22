@@ -8,5 +8,12 @@ class AppDispatcher extends Dispatcher {
       action
     });
   }
+
+  handleServerAction(action) {
+    this.dispatch({
+      source: 'SERVER_ACTION',
+      action
+    });
+  }
 }
 export default new AppDispatcher();
