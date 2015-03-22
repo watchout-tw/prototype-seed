@@ -16,7 +16,8 @@ if (IS_PRODUCTION) {
   var nodemon = require('nodemon');
 
   var server = new WebpackDevServer(compiler, {
-    noInfo: true,
+    hot: true,
+    historyApiFallback: true,
     publicPath: config.output.publicPath,
     stats: { colors: true }
   });
