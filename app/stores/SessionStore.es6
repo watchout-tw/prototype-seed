@@ -1,15 +1,15 @@
 import Store from "./Store";
 import AppDispatcher from "../AppDispatcher";
 import ActionTypes from "../constants/ActionTypes";
-import sessionstorage from "sessionstorage";
+import sessionStorage from "../utils/sessionStorage";
 
 class SessionStore extends Store {
   constructor() {
-    this.accessToken = sessionstorage.getItem("accessToken");
+    this.accessToken = sessionStorage.getItem("accessToken");
   }
 
   setToken (token) {
-    sessionstorage.setItem('accessToken', token);
+    sessionStorage.setItem('accessToken', token);
     this.accessToken = token;
     this.emitChange();
   }
@@ -19,7 +19,7 @@ class SessionStore extends Store {
   }
 
   removeToken () {
-    sessionstorage.removeItem('accessToken');
+    sessionStorage.removeItem('accessToken');
     this.accessToken = null;
     this.emitChange();
   }
