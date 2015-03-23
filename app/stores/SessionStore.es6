@@ -1,6 +1,7 @@
 import Store from "./Store";
 import AppDispatcher from "../AppDispatcher";
 import ActionTypes from "../constants/ActionTypes";
+// __mocks__ should be related to path
 import sessionStorage from "../utils/sessionStorage";
 
 class SessionStore extends Store {
