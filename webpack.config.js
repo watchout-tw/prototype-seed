@@ -21,10 +21,16 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.(js|es6)$/, exclude:/node_modules/, loaders: es6Loaders.concat(["babel-loader"]) },
-      { test: /\.css$/, loader: "style-loader!css-loader" },
+      { test: /\.css$/, loader: "style-loader!css-loader!postcss-loader" },
       { test: /\.(jpg|png)$/, loader: "url-loader"}
     ]
   },
+  postcss: [
+    require('autoprefixer-core'),
+    require("postcss-custom-properties")(),
+    require("postcss-calc")(),
+    require("postcss-bem-linter")()
+  ],
   plugins: [
     new webpack.HotModuleReplacementPlugin()
   ],
