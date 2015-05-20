@@ -20,9 +20,9 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.(js|es6)$/, exclude:/node_modules/, loaders: es6Loaders.concat(["babel-loader"]) },
+      { test: /\.(js|jsx|es6)$/, exclude:/node_modules/, loaders: es6Loaders.concat(["babel-loader"]) },
       { test: /\.css$/, loader: "style-loader!css-loader!postcss-loader" },
-      { test: /\.(jpg|png)$/, loader: "url-loader"}
+      { test: /\.(jpg|png|svg)$/, loader: "url-loader"}
     ]
   },
   postcss: [
