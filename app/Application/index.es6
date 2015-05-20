@@ -9,6 +9,7 @@ export default React.createClass({
     return (
       <div>
         Hello World
+        <i className="fa fa-smile-o"></i>
         <RouteHandler {...this.props} {...this.state} />
       </div>
     );
